@@ -5,13 +5,16 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage, createRedirect } = actions
   const toPathTemplate = path.resolve("./src/templates/to-path.js")
   const messageTemplate = path.resolve("./src/templates/message.js")
-  redirects.forEach(r => {
+  redirects.forEach((r, index) => {
+    // only createPage for cases 5 through 12
+    if (index <= 12 - 5) {
+      createPage({
+        path: r.toPath,
+        component: toPathTemplate,
+        context: r,
+      })
+    }
     createRedirect(r)
-    createPage({
-      path: r.toPath,
-      component: toPathTemplate,
-      context: r,
-    })
   })
 
   createPage({
