@@ -40,6 +40,12 @@ const redirects = [
     fromPath: "/case-1",
     toPath: "http://www.google.com",
   },
+  // a rewrite
+  {
+    fromPath: "/case-14",
+    toPath: "/case-1",
+    statusCode: 200,
+  },
 ]
 
 module.exports = { redirects }
