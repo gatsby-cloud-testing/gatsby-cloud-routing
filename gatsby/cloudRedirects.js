@@ -35,9 +35,10 @@ const redirects = [
     toPath: "/wildcard-permanent-trailing-slash/",
     isPermanent: true,
   },
+  //case-13 redirect rule when a page already exists at from path
   {
-    fromPath: "/case-13/redirect-to-existing-page",
-    toPath: "/case-1",
+    fromPath: "/case-1",
+    toPath: "http://www.google.com",
   },
 ]
 
