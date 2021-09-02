@@ -1,42 +1,42 @@
 const redirects = [
   {
-    fromPath: "/case-1",
+    fromPath: "/case-5",
     toPath: "/temporary-non-trailing-slash",
   },
   {
-    fromPath: "/case-2",
+    fromPath: "/case-6",
     toPath: "/temporary-trailing-slash/",
   },
   {
-    fromPath: "/case-3",
+    fromPath: "/case-7",
     toPath: "/permanent-non-trailing-slash",
     isPermanent: true,
   },
   {
-    fromPath: "/case-4",
+    fromPath: "/case-8",
     toPath: "/permanent-trailing-slash/",
     isPermanent: true,
   },
   {
-    fromPath: "/case-5/*",
+    fromPath: "/case-9/*",
     toPath: "/wildcard-temporary-non-trailing-slash",
   },
   {
-    fromPath: "/case-6/*",
+    fromPath: "/case-10/*",
     toPath: "/wildcard-temporary-trailing-slash/",
   },
   {
-    fromPath: "/case-7/*",
+    fromPath: "/case-11/*",
     toPath: "/wildcard-permanent-non-trailing-slash",
     isPermanent: true,
   },
   {
-    fromPath: "/case-8/*",
+    fromPath: "/case-12/*",
     toPath: "/wildcard-permanent-trailing-slash/",
     isPermanent: true,
   },
   {
-    fromPath: "/case-9",
+    fromPath: "/case-13",
     toPath: "/redirect-when-page-exists",
   },
 ]
