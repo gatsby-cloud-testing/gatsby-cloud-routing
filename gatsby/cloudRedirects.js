@@ -46,6 +46,11 @@ const redirects = [
     toPath: "/case-1",
     statusCode: 200,
   },
+  // wildcard to existing page
+  {
+    fromPath: "/case-3/*",
+    toPath: "/case-2",
+  },
 ]
 
 module.exports = { redirects }
